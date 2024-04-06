@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ExchangeInfo: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ZStack{
             // Background parchment imange
@@ -37,7 +39,7 @@ struct ExchangeInfo: View {
                 
                 // Done button
                 Button("Done"){
-                    
+                    dismiss()
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.brown)

@@ -99,7 +99,10 @@ struct ContentView: View {
                 }
                 
             }
-//            .border(.blue)
+            //            .border(.blue)
+        }
+        .sheet(isPresented: $showExchangeInfo){
+            ExchangeInfo()
         }
     }
 }
